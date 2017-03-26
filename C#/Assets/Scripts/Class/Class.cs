@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class Class : MonoBehaviour 
 {
-	//Code Blocks
-    //"Acessmodifier" "return type" function name()
-    // {
 
-    //  Code
-    // }
+	public int number = 20;
+
+
+
+	public void addnumber()
+	{
+
+		Debug.Log(number);
+	}
+
+
+
+
+
 }

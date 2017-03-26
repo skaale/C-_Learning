@@ -10,8 +10,7 @@ public class IfStatment : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-       	/*
-		// True If statement
+       	// True If statement
         if(WillItBeRainingToday)
         {
             Debug.Log("Yes you need a umbrella");
@@ -19,25 +18,7 @@ public class IfStatment : MonoBehaviour
         {
             Debug.Log("No, I dont need a umbrella");
         }
-		*/
-
-        
-		// false If statement NOT Operator
-        if (!WillItBeRainingToday)
-        {
-            Debug.Log("Yes you need a umbrella");
-        }
-        else
-        {
-
-            Debug.Log("No, I dont need a umbrella");
-        }
-
-		
+	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

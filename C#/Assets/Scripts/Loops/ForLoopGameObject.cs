@@ -5,7 +5,7 @@ using UnityEngine;
 public class ForLoopGameObject : MonoBehaviour 
 {
 
-    public int cubesY = 10;
+    public int cubesY = 10000;
     public GameObject cube;
 
 	//public Vector3 offset = Vector3.one;
@@ -16,11 +16,9 @@ public class ForLoopGameObject : MonoBehaviour
 
 		for (int y = 0; y < cubesY; y++)
         { 
-			Instantiate(cube, transform.position + transform.forward * y , Quaternion.identity);
+			Instantiate(cube, transform.position + transform.up * y , Quaternion.identity);
         }
-
-       
-        
+		     
 		Debug.Log("Nu har du en række af cubes i Y ");
 		
 	}

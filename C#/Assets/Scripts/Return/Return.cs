@@ -8,7 +8,7 @@ public class Return : MonoBehaviour
 	public int a = 5;
 	public int b = 5;
 
-	public int total;
+	public int totalSum;
 
 	// Use this for initialization
 	void Start () {
@@ -20,8 +20,8 @@ public class Return : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Space))
 		{
-			total = Multiply(a,b);
-			Debug.Log("Total:" + total );
+			totalSum = Multiply(a,b);
+			Debug.Log("Total:" + totalSum );
 
 		}
 

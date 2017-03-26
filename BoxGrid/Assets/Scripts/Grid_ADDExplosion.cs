@@ -12,11 +12,14 @@ public class Grid_ADDExplosion : MonoBehaviour
     public int zNumObject = 1;
 
     public Vector3 Spacing = Vector3.one;
+	
     public Rigidbody rigbody;
-    public float force = 100f;
+	public ForceMode forceMode;
+    
+	public float force = 100f;
     public float radius = 5f;
     public float upRadius = 5f;
-    public ForceMode forceMode;
+    
 
     public void Start()
     {

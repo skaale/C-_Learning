@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Parameters : MonoBehaviour
 {
-   
+	
     void Update()
     {
      
 		if(Input.GetKeyDown(KeyCode.Space))
 		{
-
-			TellMeThePosition(gameObject);
-
+			
+			TellMeThePosition(gameObject, "Her er jeg DU! Har fundet mig");
+			
 		}
 
     }
@@ -20,10 +20,10 @@ public class Parameters : MonoBehaviour
 
 	//GameObject is a class, gameObject is a variable (which refers to the specific GameObject that the script is attached to).
 	//string message
-	void TellMeThePosition(GameObject go)
+	void TellMeThePosition(GameObject cube, string message)
 	{
 
-		Debug.Log("Position:" + go.transform.position);
+		Debug.Log("Here is my position:" + cube.transform.position + message);
 
 	}
 

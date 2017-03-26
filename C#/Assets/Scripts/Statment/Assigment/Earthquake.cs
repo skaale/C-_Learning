@@ -22,7 +22,7 @@ public class Earthquake : MonoBehaviour
         }else if (Richter > 9)
         {
 
-            Debug.Log("IT IS GREATER THAN 9!!, this is the end of the world as we know it !! ");
+            Debug.Log("IT IS GREATER THAN 9!!.... This is the end of the world as we know it !! ");
 
         }else
         {

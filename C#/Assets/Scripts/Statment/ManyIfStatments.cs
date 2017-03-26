@@ -17,16 +17,16 @@ public class ManyIfStatments : MonoBehaviour
 	void Start () 
     {
         //// AND If statement
-        //if (imLateForAMeeeting && roadConditionsArePerfect)
-        //{
-        //    Debug.Log("I need to drive fast!");
-        //}else
-        //{
+        if (imLateForAMeeeting && roadConditionsArePerfect)
+        {
+            Debug.Log("I need to drive fast!");
+        }else
+        {
 
-        //    Debug.Log("I just need to take it slow!");
+            Debug.Log("I just need to take it slow!");
 
-        //}
-
+        }
+		/*
         // OR If statement
         if (imHungry || areKidsHugry)
         {
@@ -37,7 +37,7 @@ public class ManyIfStatments : MonoBehaviour
 
             Debug.Log("We are not hungry!");
         }
-        
+        */
         
 		
 	}

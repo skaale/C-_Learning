@@ -12,31 +12,30 @@ public class ElseIfStatment : MonoBehaviour
     // Use this for initialization
 	void Start () 
     {
-
-       
-        Speed();
-        
-		
-	}
+	     Speed();
+   	}
 	
 
     public void Speed()
     {
 
-        
         //Check if value is is exactly == 70, is false, so line 12 won’t be executed.
         if (speedLimit == 70)
         {
-            Debug.Log("I can drive at maximum speed");
+			Debug.Log("I am  driving at maximum speed");	
         }
         else if(speedLimit < 70 && speedLimit >= 30)
         {
-            Debug.Log("Speed Limit is less than 70 and more equals to 30");
+            Debug.Log("Speed Limit is less than 70 but faster then 30");
         }
         else if (speedLimit < 30)
         {
-            Debug.Log("I better be driving slowly,  30 mph or less");
-        }
+            Debug.Log("I am driving slowly,  30 mph or less");
+		}else{
+
+			Debug.Log("I am driving TOOO Fast!!");
+
+		}
 
     }
 

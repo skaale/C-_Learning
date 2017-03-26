@@ -11,25 +11,8 @@ public class IfThenStatments : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		GetAge();
-
-		/*
-		if(myAge > 18)
-		{
-
-			Debug.Log(" I am older than 18");
-
-		}else
-		{
-
-			Debug.Log(" You are NOT! older than 18");
-
-		}
-		*/
-
+	    GetAge();
 	}
-
-
 
 	void GetAge()
 	{
@@ -51,18 +34,6 @@ public class IfThenStatments : MonoBehaviour
 
 		}
 
-
-
 	}
 
-
-	
-	// Update is called once per frame
-	void Update () 
-	{
-
-
-			
-		
-	}
 }

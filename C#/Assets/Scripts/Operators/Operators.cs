@@ -34,7 +34,7 @@ public class Operators : MonoBehaviour
 
 			Debug.Log("a equal to b");
 		}
-		if(a - b == 12)
+		if(a - b == c)
 		{
 
 			Debug.Log("a minus b  is equal to b");
