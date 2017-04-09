@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 	public string axisName = "Horizontal";
 
 
+
 	private Rigidbody2D rigidBody;
 
 
@@ -34,8 +35,8 @@ public class PlayerController : MonoBehaviour
 		}
 
 
-		transform.position += transform.right*Input.GetAxis(axisName)*speed*Time.deltaTime;
-
+		//transform.position += transform.right * Input.GetAxis(axisName)*speed*Time.deltaTime;
+		transform.position += transform.right * Input.GetAxis(axisName) * speed * Time.deltaTime ;
 	}
 
 

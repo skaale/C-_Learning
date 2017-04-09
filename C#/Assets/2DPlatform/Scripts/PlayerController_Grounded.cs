@@ -8,7 +8,7 @@ public class PlayerController_Grounded : MonoBehaviour
 
 	public float jumpForce = 1f;
 	public float dist = 0.5f;
-	public float Speed = 0.2f;
+
 
 
 	private Rigidbody2D rigidBody;
@@ -19,6 +19,7 @@ public class PlayerController_Grounded : MonoBehaviour
 	void Start () 
 	{
 
+
 		rigidBody = GetComponent<Rigidbody2D>();
 
 	}
@@ -27,51 +28,43 @@ public class PlayerController_Grounded : MonoBehaviour
 	void Update () 
 	{
 		
-
 		if(Input.GetMouseButton(0))
 		{
-			
-			Jump();
-
-
+		Jump();
 		}
 		
 	}
 
 	void Jump()
 	{
+
 		if(IsGrounded())
 		{
-			
-		
-				
-		 rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-
-			
+			rigidBody.AddForce(Vector2.up * jumpForce,ForceMode2D.Impulse);
 
 		}
-	
+
 		
 	}
 
 
 
 	public LayerMask groundLayer;
+
 	bool IsGrounded()
 	{
 
-		if(	Physics2D.Raycast(this.transform.position, Vector2.down, dist, groundLayer.value))
+		if(Physics2D.Raycast(transform.position, Vector2.down, dist, groundLayer.value))
 		{
-			
 			return true;
 
 
-		}else 
-		{
-		   
-		   return false;
+		}else{
 
+
+			return false;
 		}
+
 
 
 	}

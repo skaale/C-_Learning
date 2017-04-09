@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/c#.unity
+- path: Assets/2DPlatform/Levels/lv0.unity
   isLoaded: 1
   isActive: 1
